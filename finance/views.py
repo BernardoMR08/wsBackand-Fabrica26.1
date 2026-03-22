@@ -1,3 +1,11 @@
 from django.shortcuts import render
+from .service import get_bitcoin_price
 
-# Create your views here.
+def home(request):
+    preco = get_bitcoin_price()
+    return render(request, 'finance/home.html', {'price': preco})
+
+
+
+
+

@@ -1,3 +1,6 @@
 from django.contrib import admin
+from .models import Carteira, Transacao
 
-# Register your models here.
+admin.site.register(Carteira)
+admin.site.register(Transacao)
+
